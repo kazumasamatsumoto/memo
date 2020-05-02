@@ -12,3 +12,10 @@ qr.service
 html側と連携して持たせたい場合は
 login.ts
 など現在の機能をどのグループに分ければいいのかを考えると開発しやすくなる
+
+### アイコン
+https://ionicons.com/
+
+### ion-xxxxで開発するときのカラー管理
+https://ionicframework.com/docs/theming/colors
+
