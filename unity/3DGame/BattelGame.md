@@ -2,6 +2,6 @@
 
 DamagerのC#スクリプトを作成
 ```
-public int damege;
+public int damage;
 ```
 
