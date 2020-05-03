@@ -69,3 +69,13 @@ private void FixedUpdate()
         animator.GetComponent<PlayerManager>().moveSpeed = 3;
     }
 ```
+## まとめ
+キャラクター配置
+
+プレハブ化解除
+
+リジットボディ追加
+
+アニメーション作成
+
+スクリプトでいろいろ
