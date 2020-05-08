@@ -37,3 +37,5 @@ private void OnTriggerEnter(Collider other)
 
 どの状態からでもダメージは受けるのでany stateからMake Transitionを実装する
 
+## 武器が当たった時に実装する
+
