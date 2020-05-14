@@ -22,6 +22,7 @@ Queryオブジェクトを作成する最も簡単な方法はTableオブジェ�
 ```
 詳細
 
-https://book.cakephp.org/3/ja/orm/database-basics.html#database-queries
+[クエリの詳細](https://book.cakephp.org/3/ja/orm/database-basics.html#database-queries)
 
 ```
+
