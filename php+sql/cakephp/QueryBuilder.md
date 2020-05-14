@@ -24,3 +24,17 @@ Queryオブジェクトを作成する最も簡単な方法はTableオブジェ�
 
 [クエリの詳細](https://book.cakephp.org/3/ja/orm/database-basics.html#database-queries)
 
+```
+use Cake\ORM\TableRegistry
+
+// 3.6 より前は、 TableRegistry::get('Articles') を使用
+$articles = TableRegistry::getTableLocator()->get('Articles');
+
+// テーブルを取得して変数articlesに代入
+
+// 新しいクエリーを始めます。
+$query = $articles->find();
+
+// $articlesからfind()を呼び出すことによってクエリを始めることができる
+
+```
