@@ -126,3 +126,47 @@ Queryオブジェクトはまた、結果オブジェクトとして直接使う
 配列に対する反復処理
 [イテレート](http://e-words.jp/w/%E3%82%A4%E3%83%86%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html)
 
+## テーブルから単一行を取得する
+
+first()メソッドを使うことでクエリの最初の結果を取得することができます。
+
+```
+$article = $ articles
+    ->find()
+    ->where(['id' => 1])
+    ->first();
+
+debug($article->title);
+```
+
+## カラムから値リストを取得する
+
+```
+// Collectionライブラリのextract()メソッドを使う
+// これもクエリを実行します
+
+$allTitles = $articles->find()->extract('title');
+
+foreach ($allTitles as $title) {
+    echo $title;
+}
+```
+
+クエリの結果からkey-valueリストを得ることもできる
+
+クエリの結果からkey-valueリストを得ることもできる
+```
+$list = $articles->find('list');
+
+foreach ($list as &id => $title) {
+    echo "$id : $title"
+}
+```
+
+リストを生成するために使用するフィールドのカスタマイズの方法を詳しい情報は、
+[キー/値のペアを検索する](https://book.cakephp.org/3/ja/orm/retrieving-data-and-resultsets.html#table-find-list)
+セクションを参照する
+
+## クエリはCollectionオブジェクトである
+Queryオブジェクトのメソッドに慣れたら、Collectionを見て、効果的にデータを横断するスキルを磨くことを強くお勧めします。つまり、Collectionオブジェクトで呼ぶことができるものは、Queryオブジェクトでも呼ぶことができることを、知っておくことは重要です。
+
