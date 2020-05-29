@@ -4,7 +4,7 @@
 
 例えば申請/承認/実施に伴う6つの状態の遷移を考えてみます
 
-<img src="../Images/ExampleStateTransition.png">
+<img src="./Images/ExampleStateTransition.png">
 
 ある状態が遷移できる次の状態には制限があります。
 
@@ -50,7 +50,7 @@ Enumのvalues()メソッドを状態の一覧が取得できます。
 
 まず、可能な状態せんいの組み合わせを確認してみましょう。
 
-<img src="../Images/stateTransition.png">
+<img src="./Images/stateTransition.png">
 
 この状態遷移表を列挙型とコレクションを使ってコードで表現するやり方は次の通りです。
 
